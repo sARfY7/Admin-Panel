@@ -25,6 +25,7 @@ body {
   font-size: 1.2rem;
   font-weight: 600;
   letter-spacing: 0.2rem;
+  overflow-x: hidden;
 }
 
 .nav {
@@ -87,7 +88,7 @@ body {
 }
 
 .wrapper {
-  padding-top: 8rem;
+  padding-top: 9rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -237,21 +238,6 @@ input[type="submit"]:hover {
   background-color: #ff4d4d;
 }
 
-.container {
-  padding-top: 10rem;
-  width: 100vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .heading {
   margin-bottom: 2rem;
   text-align: center;
@@ -390,4 +376,55 @@ input[type="submit"]:hover {
 #product_image {
   width: auto;
   border-radius: 2.5rem;
+}
+
+.products-container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.product-box {
+  max-width: 30rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+.product-box:not(:last-child) {
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+
+.product-box:hover {
+  cursor: pointer;
+}
+
+.product-box__image img {
+  width: 100%;
+}
+
+.product-box__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.product-box__currency {
+  margin-right: 0.5rem;
 }
