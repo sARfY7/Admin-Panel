@@ -1,5 +1,5 @@
 <?php
     if (!isset($_SESSION["userID"])) {
-        die("Please Login to Continue!");
+        header("location: index.php?error=3");
     }
 ?>

@@ -1,3 +1,7 @@
+<?php
+    session_start();
+    require("isAuth.php");
+?>
 <?php include('includes/common-head.php'); ?>
     <title>Dashboard</title>
   </head>

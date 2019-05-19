@@ -1,4 +1,8 @@
 <?php
+    session_start();
+    require("isAuth.php");
+?>
+<?php
     require("dbConnection.php");
     // require("isAuth.php");
 

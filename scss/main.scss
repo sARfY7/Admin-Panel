@@ -30,11 +30,15 @@ body {
 .nav {
   position: fixed;
   width: 100vw;
+  padding: 2rem;
+  background-color: #fff;
+}
+
+.nav-inner {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
-  background-color: #fff;
 }
 
 .nav-item {
@@ -156,7 +160,7 @@ input[type="submit"] {
 .error-description,
 #pwd-strength-meter {
   // text-align: left;
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-top: 1rem;
 }
 

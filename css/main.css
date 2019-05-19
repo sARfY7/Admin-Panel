@@ -32,6 +32,12 @@ body {
 .nav {
   position: fixed;
   width: 100vw;
+  padding: 2rem;
+  background-color: #fff;
+}
+
+.nav-inner {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -41,8 +47,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 2rem;
-  background-color: #fff;
 }
 
 .nav-item {
@@ -176,7 +180,7 @@ input[type="submit"]:hover {
 
 .error-description,
 #pwd-strength-meter {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-top: 1rem;
 }
 
